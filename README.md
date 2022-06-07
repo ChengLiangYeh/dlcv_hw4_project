@@ -21,6 +21,16 @@ take a seed example x and a noise vector z as input, and produce a hallucinated 
 Reference: [Low-Shot Learning from Imaginary Data](https://arxiv.org/pdf/1801.05401.pdf)
 
 ## HW4 Project 3 ― Improved Data Hallucination Model
+- Implement an improved data hallucination model to perform few-shot classification.
+- Related Few-Shot Learning papers:
+    [Adversarial Feature Hallucination Networks for Few-Shot Learning. CVPR 2020](https://arxiv.org/pdf/2003.13193.pdf)
+    
+    [Diversity Transfer Network for Few-Shot Learning. AAAI 2020](https://arxiv.org/pdf/1912.13182.pdf)
+    
+    [Image Deformation Meta-Networks for One-Shot Learning. CVPR 2019](https://arxiv.org/pdf/1905.11641.pdf)
+    
+    [Multi-level Semantic Feature Augmentation for One-shot Learning. TIP 2019](https://arxiv.org/pdf/1804.05298.pdf)
+
 
 # Usage
 To start working on this assignment, you should clone this repository into your local machine by using the following command.
