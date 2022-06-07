@@ -32,25 +32,12 @@ Reference: [Low-Shot Learning from Imaginary Data](https://arxiv.org/pdf/1801.05
     
     [Multi-level Semantic Feature Augmentation for One-shot Learning. TIP 2019](https://arxiv.org/pdf/1804.05298.pdf)
 
+## Dataset
+- Contact me for Dataset.
+- Email: chengliang.yeh@gmail.com
 
-# Usage
-To start working on this assignment, you should clone this repository into your local machine by using the following command.
-
-    git clone https://github.com/DLCV-Fall-2020/hw4-<username>.git
-Note that you should replace `<username>` with your own GitHub username.
-
-For more details, please click [this link](https://drive.google.com/file/d/1YN_8gCIfxB5AvBZ7ruD6bFkEbRTHqL9L/view?usp=sharing) to view the slides of HW4. **Note that hw4 video and introduction pdf files can be accessed in your NTU COOL.**
-
-### Dataset
-In the starter code of this repository, we have provided a shell script for downloading and extracting the dataset for this assignment. For Linux users, simply use the following command.
-
-    bash ./get_dataset.sh
-The shell script will automatically download the dataset and store the data in a folder called `hw4_data`. Note that this command by default only works on Linux. If you are using other operating systems, you should download the dataset from [this link](https://drive.google.com/file/d/1c4nEjrUISeSl7LEf9VUmkpKwvdx3fnuj/view?usp=sharing) and unzip the compressed file manually.
-> ⚠️ ***IMPORTANT NOTE*** ⚠️  
-> You should keep a copy of the dataset only in your local machine. **DO NOT** upload the dataset to this remote repository. If you extract the dataset manually, be sure to put them in a folder called `hw4_data` under the root directory of your local repository so that it will be included in the default `.gitignore` file.
-
-### Evaluation
-To evaluate your models in Problems 1~3, you can run the evaluation script provided in the starter code by using the following command.
+## Evaluation
+Run the evaluation script by using the following command.
 
     python3 eval.py $1 $2
 
@@ -59,19 +46,16 @@ To evaluate your models in Problems 1~3, you can run the evaluation script provi
 
 Note that for `eval.py` to work, your predicted `.csv` files should have the same format as the ground truth files `val_testcase_gt.csv` provided in the dataset.
 
-# Submission Rules
-### Deadline
-109/12/29 (Tue.) 02:00 AM (GMT+8)
+## Result
+- Prototypical Network result (meta-train and meta-test under the same 5-way K-shot setting, (K=1, 5, 10))
 
-### Late Submission Policy
-You have a three-day delay quota for the whole semester. Once you have exceeded your quota, the credit of any late submission will be deducted by 30% each day.
+    ![1](./pic/PN_result.png)
 
-Note that while it is possible to continue your work in this repository after the deadline, **we will by default grade your last commit before the deadline** specified above. If you wish to use your quota or submit an earlier version of your repository, please contact the TAs and let them know which commit to grade.
-
-### Academic Honesty
--   Taking any unfair advantages over other class members (or letting anyone do so) is strictly prohibited. Violating university policy would result in an **F** grade for this course (**NOT** negotiable).    
--   If you refer to some parts of the public code, you are required to specify the references in your report (e.g. URL to GitHub repositories).      
--   You are encouraged to discuss homework assignments with your fellow class members, but you must complete the assignment by yourself. TAs will compare the similarity of everyone’s submission. Any form of cheating or plagiarism will not be tolerated and will also result in an **F** grade for students with such misconduct.
+- Data Hallucination result with t-SNE visualization.
+    Fail to seperate real datas and hallucinated datas.
+    ![1](./pic/DH_result.png)
+   
+- Check more detail in hw4_report.pdf
 
 ### Submission Format
 Aside from your own Python scripts and model files, you should make sure that your submission includes *at least* the following files in the **root directory** of this repository:
