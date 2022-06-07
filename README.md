@@ -23,6 +23,7 @@ Reference: [Low-Shot Learning from Imaginary Data](https://arxiv.org/pdf/1801.05
 ## HW4 Project 3 ― Improved Data Hallucination Model
 - Implement an improved data hallucination model to perform few-shot classification.
 - Related Few-Shot Learning papers:
+
     [Adversarial Feature Hallucination Networks for Few-Shot Learning. CVPR 2020](https://arxiv.org/pdf/2003.13193.pdf)
     
     [Diversity Transfer Network for Few-Shot Learning. AAAI 2020](https://arxiv.org/pdf/1912.13182.pdf)
