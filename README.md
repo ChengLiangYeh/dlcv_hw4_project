@@ -51,10 +51,15 @@ Note that for `eval.py` to work, your predicted `.csv` files should have the sam
 
     ![1](./pic/PN_result.png)
 
-- Data Hallucination result with t-SNE visualization.
-    Fail to seperate real datas and hallucinated datas.
+- Data Hallucination result with t-SNE visualization
+
+    It seems like the model fail to seperate real datas and hallucinated datas.
     ![1](./pic/DH_result.png)
-   
+    
+- Data Hallucination result (meta-train, meta-test under the same 5-way 1-shot M-augmentation (M=10,50,100))
+
+    ![1](./pic/DH_result2.png)
+    
 - Check more detail in hw4_report.pdf
 
 ### Submission Format
