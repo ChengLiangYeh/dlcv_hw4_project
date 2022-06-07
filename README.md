@@ -84,6 +84,7 @@ The shell script file for running your network with improved data hallicination.
 This script takes as input a folder containing testing images, and should output the predicted results in a `.csv` file.
  5.   Trained Models weights will be auto downloaded by shell script file commands. If the dropbox link dead, please contact me. 
  6.   Run code in the following manner:
+ 
     bash hw4_download.sh
     bash hw4_1.sh $1 $2 $3 $4
     bash hw4_2.sh $1 $2 $3 $4
