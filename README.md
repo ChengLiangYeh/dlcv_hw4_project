@@ -1,4 +1,13 @@
-# HW4 - Few-Shot Classification
+# Deep Learning for Computer Vision HW4
+## HW4 Project 1 ― Prototypical Network
+- In this project, I will implement the prototypical network to perform 5-way 1-shot classification. Prototypical Networks learn a metric space in which classification can be performed by computing distances to prototype representations of each class.
+- Perform 5-way 5-shot and 5-way 10-shot classification.
+- Model:
+![1](./pic/Prototypical_Network.png)
+
+## HW4 Project 2 ― Data Hallucination for Few-shot Learning
+## HW4 Project 3 ― Improved Data Hallucination Model
+
 # Usage
 To start working on this assignment, you should clone this repository into your local machine by using the following command.
 
