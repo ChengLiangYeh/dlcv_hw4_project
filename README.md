@@ -62,25 +62,28 @@ Note that for `eval.py` to work, your predicted `.csv` files should have the sam
     
 - Check more detail in hw4_report.pdf
 
-### Submission Format
-Aside from your own Python scripts and model files, you should make sure that your submission includes *at least* the following files in the **root directory** of this repository:
- 1.   `hw4_<StudentID>.pdf`  
-The report of your homework assignment. Refer to the "*Grading*" section in the slides for what you should include in the report. Note that you should replace `<StudentID>` with your student ID, **NOT** your GitHub username.
- 2.   `hw4_download.sh` 
- Download all the models needed for Problem 1~3. We will execute this script first.
- 3.   `hw4_1.sh`  
+## Packages
+- This homework should be done using python3.6. Please refer to the requirments.txt for more details about others packages.
+- You can run the following command to install all the packages listed in the requirements.txt:
+
+    pip3 install -r requirements.txt
+
+- Note that using packages with different versions will very likely lead to compatibility issues, so make sure that you install the correct version if one is specified above.
+
+## Others
+ 1.   `hw4_download.sh` 
+ Download all the models.
+ 2.   `hw4_1.sh`  
 The shell script file for running your Prototypical Network.
 This script takes as input a folder containing testing images, and should output the predicted results in a `.csv` file.
- 4.   `hw4_2.sh`  
+ 3.   `hw4_2.sh`  
 The shell script file for running your network with data hallicination.
 This script takes as input a folder containing testing images, and should output the predicted results in a `.csv` file.
- 5.   `hw4_3.sh`  
+ 4.   `hw4_3.sh`  
 The shell script file for running your network with improved data hallicination.. 
 This script takes as input a folder containing testing images, and should output the predicted results in a `.csv` file.
-
-
-TA will run your code in the following manner:
-
+ 5.   Trained Models weights will be auto downloaded by shell script file commands. If the dropbox link dead, please contact me. 
+ 6.   Run code in the following manner:
     bash hw4_download.sh
     bash hw4_1.sh $1 $2 $3 $4
     bash hw4_2.sh $1 $2 $3 $4
@@ -92,22 +95,3 @@ TA will run your code in the following manner:
 -   `$4` path of output csv file (predicted labels) (e.g., `output/val_pred.csv`)
 -   `$5`: training images csv file (e.g., `hw4_data/train.csv`)
 -   `$6`: training images directory (e.g., `hw4_data/train`)
-
-> 🆕 ***NOTE***  
-> For the sake of conformity, please use the `python3` command to call your `.py` files in all your shell scripts. Do not use `python` or other aliases, otherwise your commands may fail in our autograding scripts.
-
-### Packages
-This homework should be done using python3.6. For a list of packages you are allowed to import in this assignment, please refer to the requirments.txt for more details.
-
-You can run the following command to install all the packages listed in the requirements.txt:
-
-    pip3 install -r requirements.txt
-
-Note that using packages with different versions will very likely lead to compatibility issues, so make sure that you install the correct version if one is specified above. E-mail or ask the TAs first if you want to import other packages.
-
-
-# Q&A
-If you have any problems related to HW4, you may
-- Use TA hours
-- Contact TAs by e-mail ([ntudlcv@gmail.com](mailto:ntudlcv@gmail.com))
-- Post your question under hw4 FAQ section in FB group
