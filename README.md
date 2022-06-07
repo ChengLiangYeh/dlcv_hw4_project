@@ -1,11 +1,25 @@
 # Deep Learning for Computer Vision HW4
 ## HW4 Project 1 ― Prototypical Network
 - In this project, I will implement the prototypical network to perform 5-way 1-shot classification. Prototypical Networks learn a metric space in which classification can be performed by computing distances to prototype representations of each class.
+
 - Perform 5-way 5-shot and 5-way 10-shot classification.
+
 - Model:
+
 ![1](./pic/Prototypical_Networks.png)
+Reference: [Prototypical Networks for Few-shot Learning](https://arxiv.org/pdf/1703.05175.pdf)
 
 ## HW4 Project 2 ― Data Hallucination for Few-shot Learning
+- In this project, I will improve the prototypical network by data hallucination. Hallucinator will
+take a seed example x and a noise vector z as input, and produce a hallucinated example as output.
+
+- perform 5-way 1-shot M-augmentation classification and analyze the quality of the hallucinated data by t-SNE. (M=10, 50, 100)
+
+- Model:
+
+![1](./pic/PN_Data_Hallucination.png)
+Reference: [Low-Shot Learning from Imaginary Data](https://arxiv.org/pdf/1801.05401.pdf)
+
 ## HW4 Project 3 ― Improved Data Hallucination Model
 
 # Usage
